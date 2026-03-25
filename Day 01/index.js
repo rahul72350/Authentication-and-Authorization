@@ -10,7 +10,7 @@ app.use(express.json());
 const users = [];  //in memory storage
 
 
-app.post('register',(req,res)=>{
+app.post('register',(req,re)=>{
     const {email, password} = req.body;
 
     const user = users.find(user=> user.email === email);
